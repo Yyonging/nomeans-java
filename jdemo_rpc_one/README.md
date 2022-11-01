@@ -1,6 +1,6 @@
 ## Description
 
-A demo use guice and bazel
+A demo use grpc and bazel
 
 ## Folder Structure
 
@@ -15,9 +15,20 @@ The workspace contains two folders by default, where:
 
 - bazel installation
 
+- proto compiler installation
+
 ## build command
 
+- compile proto file
+
+> protoc --java_out=src/com/demo src/proto/helloword.proto
+
+- build client executable
+
 > bazel build //:guice_one
+
+- build client executable
+
 
 ## run command
 
