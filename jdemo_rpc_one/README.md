@@ -15,21 +15,20 @@ The workspace contains two folders by default, where:
 
 - bazel installation
 
-- proto compiler installation
+<!-- - proto compiler installation -->
 
 ## build command
 
-- compile proto file
+- build all
 
-> protoc --java_out=src/com/demo src/proto/helloword.proto
-
-- build client executable
-
-> bazel build //:guice_one
-
-- build client executable
-
+> bazel build //...
 
 ## run command
 
-> bazel-bin/guice_one
+- make sure the 8080 port is available
+
+> bazel-bin/jdemo_server
+
+- another terminal run the client
+
+> bazel-bin/jdemo_client
