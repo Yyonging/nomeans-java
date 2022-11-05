@@ -6,6 +6,7 @@ A rpc demo use thrift and bazel
 
 The workspace contains two folders by default, where:
 
+- `gen-java`: code that thrift genrate
 - `src`: the folder to maintain sources
 - `BUILD`: bazel build file
 
