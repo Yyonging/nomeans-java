@@ -1,5 +1,4 @@
 
-
 package com.demo;
 
 import org.apache.thrift.TException;

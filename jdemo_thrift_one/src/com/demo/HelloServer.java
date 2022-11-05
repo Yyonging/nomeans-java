@@ -14,7 +14,7 @@ public class HelloServer {
             System.out.println("Server starting....");
             TServerSocket serverTransport = new TServerSocket(8080);
             TServer server = new TSimpleServer(new TServer.Args(serverTransport)
-            .processor(new Hello.Processor<Hello.Iface>(new HelloServiceImpl())));
+                    .processor(new Hello.Processor<Hello.Iface>(new HelloServiceImpl())));
             server.serve();
         } catch (TTransportException e) {
             e.printStackTrace();
