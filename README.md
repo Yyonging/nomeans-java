@@ -7,3 +7,5 @@
 - [Demo with Bazel and grpc](./jdemo_rpc_one)
 
 - [Demo with Bazel and thrift](./jdemo_thrift_one)
+
+- [Demo with Bazel and Gson](./jdemo_gson_one/)
